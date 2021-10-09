@@ -39,7 +39,7 @@ const development = {
     }
 }
 
-dotenv.config()
+// dotenv.config()
 
 const production = {
     name:'production',
