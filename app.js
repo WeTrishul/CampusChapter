@@ -106,7 +106,7 @@ const NotificationSocket = require('./config/notification_socket').notification(
 NotificationServer.listen(7000)
 
 
-
+// sudo killall -9 node
 
 
 app.listen(port,()=>{

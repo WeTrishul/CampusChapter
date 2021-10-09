@@ -68,4 +68,4 @@ const production = {
 
 console.log(eval(process.env.NODE_ENV))
 
-module.exports = development //eval(process.env.CAMPUS_CHAPTER_ENVIRONMENT) === undefined ? development : eval(process.env.CAMPUS_CHAPTER_ENVIRONMENT)
+module.exports =   eval(process.env.CAMPUS_CHAPTER_ENVIRONMENT) === undefined ? development : eval(process.env.CAMPUS_CHAPTER_ENVIRONMENT) //development
