@@ -6,7 +6,7 @@ class NotiEngine{
         this.username = username;
       
 
-        this.socket = io.connect('http://localhost:7000');
+        this.socket = io.connect('http://18.206.209.88:7000');
 
         if (this.username){
             this.connectionHandler();

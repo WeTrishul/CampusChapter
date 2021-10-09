@@ -8,7 +8,7 @@ class ChatEngine{
         this.username = username;
         this.chattype=chattype;
 
-        this.socket = io.connect('http://localhost:5000');
+        this.socket = io.connect('http://18.206.209.88:5000');
 
         if (this.username){
             this.connectionHandler();
