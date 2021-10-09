@@ -8,7 +8,7 @@ module.exports.notification = (socketserver) =>{
 
     let io = require('socket.io')(socketserver, {
         cors: {
-          origin: "http://18.206.209.88:80",
+          origin: "http://wetrishul.in",
           methods: ["GET", "POST"]
         }
       })
