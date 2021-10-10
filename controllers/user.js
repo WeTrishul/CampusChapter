@@ -73,7 +73,7 @@ module.exports.postsignup = async (req,res)=>{
         const newObjUser = req.body
 
         try {
-                const token =  jwt.sign(newObjUser,Env.jwt_secret,{expiresIn:60*60*24})
+                const token =  jwt.sign(newObjUser,'CampusChapter',{expiresIn:60*60*24})
                 console.log(token)
     
     
