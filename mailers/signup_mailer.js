@@ -9,7 +9,7 @@ exports.signup = (obj)/*email,token*/=>{
         from:'team.weTrishul@gmail.com',
         to: obj.email,
         subject:'Verify Account',
-        html:'<p>Click <a href="http://localhost:3000/verify/user/'+ tokenVal + '"a>Please verify your account!!</a></p>'              
+        html:'<p>Click <a href="http://wetrishul.in/verify/user/'+ tokenVal + '"a>Please verify your account!!</a></p>'              
     },(err,info)=>{
         if(err){
             console.log('Error in sending Mail', err)

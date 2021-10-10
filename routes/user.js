@@ -66,7 +66,7 @@ router.get('/seeQ/:id',UserController.listUserQuestions)
 clientId = codechef.clientId
 
 
-router.get('https://api.codechef.com/oauth/authorize?response_type=code&client_id=504ef030a3d0d8456e73a83f62b1cd72&redirect_uri=http://localhost:3000/getGrantCode&state=xyz')
+router.get('https://api.codechef.com/oauth/authorize?response_type=code&client_id=504ef030a3d0d8456e73a83f62b1cd72&redirect_uri=http://wetrishul.in/getGrantCode&state=xyz')
 router.get('/getGrantCode',CodechefController.getGrantCode)
 router.get('/helloworld',async (req,res)=>{
     tokenUrl = 'https://api.codechef.com/oauth/token'
@@ -75,7 +75,7 @@ router.get('/helloworld',async (req,res)=>{
         'code': 'fe0f7e0293eb0d7d9069ddde02fbfff09f309559',
         'client_id': '504ef030a3d0d8456e73a83f62b1cd72',
         'client_secret': '8576906e0da74991d05f9b7d12a9dd4a',
-        'redirect_uri': 'http://localhost:3000/getGrantCode'
+        'redirect_uri': 'http://wetrishul.in/getGrantCode'
       }
 
       fetch(tokenUrl, { method: 'POST', body: JSON.stringify(data), headers: { 'Content-Type': 'application/json' } })

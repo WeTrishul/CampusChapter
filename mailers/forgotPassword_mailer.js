@@ -9,7 +9,7 @@ exports.forgot = (obj)/*email,token*/=>{
         from:'team.weTrishul@gmail.com',
         to: obj.email,
         subject:'Forgot password',
-        html:'<p>Click <a href="http://localhost:3000/reset/password/'+ tokenVal + '"a>change karlo bhai</a></p>'              
+        html:'<p>Click <a href="http://wetrishul.in/reset/password/'+ tokenVal + '"a>change karlo bhai</a></p>'              
     },(err,info)=>{
         if(err){
             console.log(email)
