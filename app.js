@@ -106,7 +106,7 @@ app.use(logger(Env.morgan.mode,Env.morgan.options))
 const ChatServer = require('http').Server(app)
 const ChatSocket = require('./config/chatsocket').chat(ChatServer)
 
-ChatServer.listen(5000)
+ChatServer.listen(8001)
 
 const NotificationServer = require('http').Server(app)
 const NotificationSocket = require('./config/notification_socket').notification(NotificationServer)
