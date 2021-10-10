@@ -13,7 +13,7 @@
 
             $.ajax({
                 type: 'post',
-                url: '/postit',
+                url: 'http://wetrishul.in/postit',
                 data: newPostForm.serialize(),
                 success: function(data){
                 //    console.log(data);
