@@ -97,7 +97,7 @@ module.exports.postsignup = async (req,res)=>{
                 })
            
         } catch (error) {
-            console.log(error)
+            console.log('idhar vaala error' + error)
             res.redirect('back')
         }
     }
@@ -365,7 +365,7 @@ module.exports.changePassword = async (req,res)=>{
         jwt.verify(token,'CampusChapter',(error,decodedData)=>{
             if(error)
             {
-                console.log('Incorrect token or it is expired')
+                console.log('incorrect token or it is expired')
                 return
             }
             user.password = newPass
