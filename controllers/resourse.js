@@ -332,7 +332,7 @@ module.exports.postresourses = async(req,res)=>{
            }
             } catch (error) {
                 console.log('ajax ka natak',error)
-                res.redirect('/back')
+                res.redirect('back')
             }  
         })     
     }catch (error) {
