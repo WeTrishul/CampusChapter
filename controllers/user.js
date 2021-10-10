@@ -105,13 +105,13 @@ module.exports.postsignup = async (req,res)=>{
 
     module.exports.verifySignup= async (req,res)=>{
         const token = req.params.token
-        console.log(token)
+        console.log('yh rha mera token : '+token)
         try {
 
             jwt.verify(token,'CampusChapter', async (error,decodedData)=>{
                 if(error)
                 {
-                    console.log('Incorrect token or it is expired' + error.message)
+                    console.log('Incorrect token or it is expired' + error)
                     return
                 }
                 const email = decodedData.email
