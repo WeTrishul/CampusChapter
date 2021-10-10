@@ -31,7 +31,7 @@ const development = {
       },
     google_client_ID:'724954914773-8tgpsd25gtsegic3g6g1jom7sslie8e9.apps.googleusercontent.com',
     google_client_secret:'TNMJyQfBVgQAQOglMyxIWLce',
-    google_callback_URL:'http://localhost:3000/users/auth/google/callback',
+    google_callback_URL:'http://wetrishul.in/users/auth/google/callback',
     jwt_secret:'CampusChapter',
     morgan:{
       mode:'dev',
