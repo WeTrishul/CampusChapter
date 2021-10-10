@@ -6,7 +6,7 @@ exports.forgot = (obj)/*email,token*/=>{
     console.log('******* token value from forgotPassword_mailer',tokenVal)
 
     nodemailer.transporter.sendMail({
-        from:'team.weTrishul@gmail.com',
+        from:'team.wetrishul@gmail.com',
         to: obj.email,
         subject:'Forgot password',
         html:'<p>Click <a href="http://wetrishul.in/reset/password/'+ tokenVal + '"a>change karlo bhai</a></p>'              

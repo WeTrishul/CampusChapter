@@ -6,7 +6,7 @@ exports.signup = (obj)/*email,token*/=>{
     console.log('******* token value from VerifyUser_mailer',tokenVal)
 
     nodemailer.transporter.sendMail({
-        from:'team.weTrishul@gmail.com',
+        from:'team.wetrishul@gmail.com',
         to: obj.email,
         subject:'Verify Account',
         html:'<p>Click <a href="http://wetrishul.in/verify/user/'+ tokenVal + '"a>Please verify your account!!</a></p>'              
