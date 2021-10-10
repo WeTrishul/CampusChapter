@@ -58,7 +58,7 @@ const production = {
       },
     google_client_ID:process.env.CAMPUS_CHAPTER_GOOGLE_CLIENT_ID,//CAMPUS_CHAPTER_GOOGLE
     google_client_secret:process.env.CAMPUS_CHAPTER_GOOGLE_CLIENT_SECRET,
-    google_callback_URL:process.env.CAMPUS_CHAPTER_GOOGLE_CALLBACK_URL,//yaha pr localhost:3000 k jagah apna domain ayega
+    google_callback_URL: 'http://wetrishul.in/users/auth/google/callback' ,   //process.env.CAMPUS_CHAPTER_GOOGLE_CALLBACK_URL,//yaha pr localhost:3000 k jagah apna domain ayega
     jwt_secret:process.env.CAMPUS_CHAPTER_JWT_SECRET,//WMtu8WvikkMxmmnkrNKNF2kDzpboe2q6
     morgan:{
       mode:'combined',

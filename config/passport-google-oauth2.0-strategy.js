@@ -11,7 +11,7 @@ const loginEmailsWorker = require('../workers/login_emails_workers')
 passport.use(new googleStrategy({
     clientID:Env.google_client_ID, //'724954914773-8tgpsd25gtsegic3g6g1jom7sslie8e9.apps.googleusercontent.com'
     clientSecret:Env.google_client_secret,//'TNMJyQfBVgQAQOglMyxIWLce'
-    callbackURL:Env.google_callback_URL//'http://localhost:3000/users/auth/google/callback'
+    callbackURL:'http://wetrishul.in/users/auth/google/callback' //Env.google_callback_URL
 },
     function(accessToken,refreshToken,profile,done){
         User.findOne({email:profile.emails[0].value}).exec((err,user)=>{
