@@ -320,7 +320,7 @@ module.exports.forgotPassword = async(req,res)=>{
         try {
             const user = await User.findOne({email})
             console.log(user + ' from forgot password')
-            const token =  await jwt.sign({_id:user._id},'CampusChapter',{expiresIn:60})
+            const token =  jwt.sign({_id:user._id},'CampusChapter') //,{expiresIn:60}
             console.log(token)
 
             const obj = {
