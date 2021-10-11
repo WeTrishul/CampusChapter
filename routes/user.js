@@ -26,7 +26,7 @@ router.post('/login/createsession',passport.authenticate(
     ),UserController.postlogin)
 
 
-    router.get('https://www.google.com/url?q=http://wetrishul.in/verify/user/:token',UserController.verifySignup)
+    router.get('/wetrishul.in/verify/user/:token',UserController.verifySignup)
 
 router.get('/users/auth/google',passport.authenticate('google',{scope:['profile','email']}))
 router.get('/users/auth/google/callback',passport.authenticate('google',{failureRedirect:'/signup'}),UploadController.profile)
